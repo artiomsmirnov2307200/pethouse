@@ -1,0 +1,12 @@
+.carousel-inner{
+    width: 850px;
+    height: 200px;
+} 
+.news{
+    text-align: center;
+    font-size: 50px;
+}
+
+.top5px{
+    margin-top: 5px;
+}
