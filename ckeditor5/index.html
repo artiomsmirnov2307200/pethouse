@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+-->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<link type="text/css" href="sample/css/sample.css" rel="stylesheet" media="screen" />
+	<title>CKEditor 5 – document editor build sample</title>
+</head>
+<body>
+
+<header>
+	<div class="centered">
+		<h1><a href="https://ckeditor.com/ckeditor-5"><img src="sample/img/logo.svg" alt="CKEditor 5 rich text editor" /></a></h1>
+
+		<input type="checkbox" id="menu-toggle" />
+		<label for="menu-toggle"></label>
+		  
+		<nav>
+			<ul>
+				<li><a href="https://ckeditor.com/ckeditor-5">Project homepage</a></li>
+				<li><a href="https://ckeditor.com/docs/">Documentation</a></li>
+				<li><a href="https://github.com/ckeditor/ckeditor5">GitHub</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<main>
+	<div class="message">
+
+	</div>
+	<div class="centered">
+		<div class="document-editor">
+			<div class="toolbar-container"></div>
+			<div class="content-container">
+				<div id="editor">
+					
+					
+					
+				</div>
+			</div>
+		</div>
+
+		<div id="references">
+			
+
+			
+
+
+		
+		</div>
+	</div>
+</main>
+
+
+<script src="ckeditor.js"></script>
+
+<script>
+	DecoupledEditor
+		.create( document.querySelector( '#editor' ), {
+			// toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ]
+		} )
+		.then( editor => {
+			const toolbarContainer = document.querySelector( 'main .toolbar-container' );
+
+			toolbarContainer.prepend( editor.ui.view.toolbar.element );
+
+			window.editor = editor;
+		} )
+		.catch( err => {
+			console.error( err.stack );
+		} );
+</script>
+
+</body>
+</html>
