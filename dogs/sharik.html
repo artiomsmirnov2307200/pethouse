@@ -105,22 +105,39 @@
               <h5 class="modal-title" id="exampleModalLabel">Погулять</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <form method="post" action="https://yandex.ru">
             <div class="modal-body">
-                <form  action="">
-                  <div class="input-group flex-nowrap">
-                    <span class="input-group-text" id="addon-wrapping">@</span>
-                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Ф.И.О</label>
+                    <input type="text" class="form-control" id="fio" required placeholder="Как к вам обращаться">
+                    <div class="invalid-feedback">
+                      Пожалуйста, введите имя пользователя.
+                    </div>
                   </div>
 
-                </form>
-
-
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="useremail" placeholder="введите свой email">
+                    <div class="invalid-feedback">
+                      Пожалуйста, введите вашу почту.
+                    </div>
+                  </div>
+                  
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Время</label>
+                    <input type="date" class="form-control" id="usertime">
+                    <div class="invalid-feedback">
+                      Пожалуйста, выберите время для прогулки.
+                    </div>
+                  </div>             
 
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="submit" class="btn btn-primary">Save changes</button>
             </div>
+          </form>
           </div>
         </div>
       </div>
