@@ -10,3 +10,10 @@
 .top5px{
     margin-top: 5px;
 }
+
+
+/*@media   only screen and (max-device-width: 480px)   {
+         #carusel{
+             display: none;
+         }
+} */
