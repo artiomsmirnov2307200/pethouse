@@ -11,6 +11,16 @@
     margin-top: 5px;
 }
 
+.player{
+    margin-left: 100px;
+}
+
+.map{
+    margin-left: 150px;
+}
+.card{
+    float: left;
+}
 
 @media   only screen and (max-device-width: 480px)   {
          #carusel{
