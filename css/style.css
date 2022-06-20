@@ -1,10 +1,10 @@
 .carousel-inner{
-    width: 850px;
-    height: 200px;
+    width: 1296px;
+    height: 800px;
 } 
 .news{
     text-align: center;
-    font-size: 50px;
+    font-size: 100px;
 }
 
 .top5px{
@@ -12,11 +12,11 @@
 }
 
 .player{
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 .map{
-    margin-left: 150px;
+    margin-left: 200px;
 }
 .card{
     float: left;

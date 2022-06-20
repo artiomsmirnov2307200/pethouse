@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/dogs.css">
+    
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">PetHouse</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Наши питомцы
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="../dogs.html">Собаки</a></li>
+                          <li><a class="dropdown-item" href="../cats.html">Кошки</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="fotos.html">Фотогалерея</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../contact.html">Контакты</a>
+                  </li>
+
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+    </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+          <img class="fotocardDog" src="../img/4.jpg" alt="">
+        </div>
+        <div class="col-8">
+          <h1>Шарик</h1>
+          <p>
+            Пес Шарик описанный Булгаковым в повести «Собачье сердце» 
+            был обычной дворнягой. С самого рождения его не жаловала судьба.
+             У пса не было ни конуры, ни хозяина, 
+             который мог бы о нем позаботиться. Питалось животное в основном
+              отбросами на свалках. Позже это обернется для пса трагедией.
+          </p>
+        </div>
+    </div>
+
+    <div class="row">
+      <col-3 class=" colin">
+      <button type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#Modal1">
+        Погулять</button> 
+    </col-3>
+    <col-3 class="colin">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal2">Поддержать</button>
+    </col-3>
+    </div>
+
+    <!-- Modal поддержать-->
+    <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="ModalLabel2" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+       <!-- Modal погулять-->
+       <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="ModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Погулять</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form method="post" action="https://yandex.ru">
+            <div class="modal-body">
+                
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Ф.И.О</label>
+                    <input type="text" class="form-control" id="fio" required placeholder="Как к вам обращаться">
+                    <div class="invalid-feedback">
+                      Пожалуйста, введите имя пользователя.
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="useremail" placeholder="введите свой email">
+                    <div class="invalid-feedback">
+                      Пожалуйста, введите вашу почту.
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Время</label>
+                    <input type="date" class="form-control" id="usertime">
+                    <div class="invalid-feedback">
+                      Пожалуйста, выберите время для прогулки.
+                    </div>
+                  </div>             
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">Save changes</button>
+            </div>
+          </form>
+          </div>
+        </div>
+      </div>
+</div>
+
+
+
+
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>

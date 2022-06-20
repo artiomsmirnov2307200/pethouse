@@ -1,12 +1,12 @@
 .colin{
-    float: left;
-    width: 50%;
+    float: top;
+    width: 60%;
 }
 
 .fotocardDog{
-    width: 200px;
+    width: 400px;
     height: 150px;
 }
 .card{
-    float: left;
+    float: top;
 }
